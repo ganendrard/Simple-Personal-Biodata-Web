@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Data Mahasiswa </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Data Mahasiswa</h1>
+        <h2> Universitas Negeri Jakarta </h2>
+        <form id="studentForm">
+            <label for="nim">NIM:</label>
+            <input type="text" id="nim" value="" required>
+
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" value="" required>
+
+            <label for="jenis_kelamin">Jenis Kelamin:</label>
+            <select id="jenis_kelamin" required>
+                <option value="">...</option>
+                <option value="Laki-Laki">Laki-Laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select>
+
+            <label for="agama">Agama:</label>
+            <select id="agama" required>
+                <option value="">...</option>
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Buddha">Buddha</option>
+                <option value="Lainnya">Lainnya</option>
+            </select>
+
+            <label for="status">Status:</label>
+            <select id="status" required>
+                <option value="">...</option>
+                <option value="Aktif">Aktif</option>
+                <option value="Tidak Aktif">Tidak Aktif</option>
+            </select>
+
+            <label for="jurusan">Jurusan:</label>
+            <select id="jurusan" required>
+                <option value="">...</option>
+                <option value="Pendidikan Teknik Informatika dan Komputer">Pendidikan Teknik Informatika dan Komputer</option>
+                <option value="Sistem Teknologi dan Informasi">Sistem Teknologi dan Informasi</option>
+                <option value="Ilmu Komputer">Ilmu Komputer</option>
+                <option value="Ilmu Komunikasi">Ilmu Komunikasi</option>
+            </select>
+
+            <label for="komentar">Komentar:</label>
+            <textarea id="komentar" rows="4" placeholder=""></textarea>
+
+            <button type="button" onclick="submitForm()">Kirim</button>
+        </form>
+
+        <div id="output">
+            <div class="output-item"><strong>NIM:</strong> <span id="outputNIM">-</span></div>
+            <div class="output-item"><strong>Nama:</strong> <span id="outputNama">-</span></div>
+            <div class="output-item"><strong>Jenis Kelamin:</strong> <span id="outputGender">-</span></div>
+            <div class="output-item"><strong>Agama:</strong> <span id="outputReligion">-</span></div>
+            <div class="output-item"><strong>Status:</strong> <span id="outputStatus">-</span></div>
+            <div class="output-item"><strong>Jurusan:</strong> <span id="outputMajor">-</span></div>
+            <div class="output-item"><strong>Komentar:</strong> <span id="outputComment">-</span></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
